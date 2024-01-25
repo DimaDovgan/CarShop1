@@ -1,0 +1,39 @@
+.ul{
+// border: 2px solid #f0f2fa;
+//   background-color: white;
+//   color: #575551;
+//   width: 100px;
+display: flex;
+  flex-wrap: wrap; /* Дозволяє елементам переходити на новий рядок, якщо не вистачає місця */
+  list-style: none; /* Забирає маркери списку */
+  padding: 0;
+}
+
+.li {
+    border: 3px solid #f0f2fa;
+    border-radius: 10px;
+    /* Ваші стилі для кожного <li> елемента */
+    margin-right: 10px; /* Наприклад, відступи між елементами */
+    margin-bottom: 10px; /* Наприклад, відступи між рядками */
+    font-family: var(--var-Roboto);
+    font-weight: 400;
+    font-size: 18px;
+    color:#575551;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+
+  }
+  .filter_params_container{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .text{
+    font-family: var(--var-Roboto);
+    font-weight: 400;
+    font-size: 28px;
+    color:#575551;
+
+  }

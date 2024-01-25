@@ -1,0 +1,37 @@
+.emblema {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 8px;
+  height: 40px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-radius: 8px;
+}
+
+.div2 {
+  width: 60%;
+  background: #FFA500;
+  border-radius: 5px;
+}
+
+.carText {
+  color: #fff;
+  font-family: var(--var-Roboto);
+  font-weight: 700;
+}
+
+.textShop {
+  stop-color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: var(--var-Roboto);
+  font-weight: 700;
+}
+/*# sourceMappingURL=styles.module.css.map */

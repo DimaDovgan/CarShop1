@@ -1,0 +1,28 @@
+
+
+.emblema{
+    background: #000;
+    display: flex;
+    padding: 8px;
+    height: 40px;
+    justify-content: space-between;
+    border-radius: 8px;
+}
+.div2{
+    width: 60%;
+    background: #FFA500;
+    border-radius: 5px;
+}
+.carText{
+    color: #fff;
+    font-family: var(--var-Roboto);
+    font-weight: 700;
+}
+.textShop{
+    stop-color: #000;
+    display: flex;
+    justify-content: center;
+    font-family: var(--var-Roboto);
+    font-weight: 700;
+
+}

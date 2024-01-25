@@ -1,0 +1,9 @@
+ 
+// :export {
+//   My-gray: #575551;
+// }
+$my-color: #123456;
+
+:export {
+  myColor: $my-color;
+}

@@ -1,0 +1,13 @@
+.lineStyle {
+  width: 40px;
+  height: 4px;
+  background-color: #575551;
+  color: #575551;
+  margin: 8px 0;
+}
+
+.menu {
+  width: 40px;
+  height: 40px;
+}
+/*# sourceMappingURL=styles.module.css.map */

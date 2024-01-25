@@ -1,0 +1,52 @@
+//@use '../../variables';
+// @import  '../../variables';
+
+.header{
+    background-color: white;
+    height: 100px;
+    max-width: 100%;
+    background-color: #f0f2fa;
+    
+    // width:1024px;
+    // justify-content: space-between;
+    // align-items: center;
+    
+ }
+.header_menu{
+  display: flex;
+  flex-direction: row;
+}
+.menuIcon {
+  fill: white;
+  stroke: #575551;
+ width: 40px;
+ height: 40px;
+ margin-right: 10px;
+ &:hover,
+ &:focus {
+ fill: #575551;
+ stroke: white;
+ }
+}
+
+.heartIconActive{
+  fill: red;
+  stroke: #575551;
+ width: 40px;
+ height: 40px;
+ margin-right: 10px;
+  
+}
+
+.container{
+  width: 1440px;
+  height: 100%;
+  display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}

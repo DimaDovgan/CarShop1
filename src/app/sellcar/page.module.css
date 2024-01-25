@@ -1,0 +1,222 @@
+@charset "UTF-8";
+.sellcar {
+  height: calc(100% - 100px);
+  margin-top: 50px;
+}
+
+.sellcar_title__text {
+  font-size: 32px;
+  font-family: var(--var-Roboto);
+  font-weight: 700;
+}
+
+.sellcar_title__forspan {
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  background-color: #FFA500;
+  max-width: 1440px;
+}
+
+.sellcar_title__span {
+  font-size: 28px;
+  font-family: var(--var-Roboto);
+  font-weight: 400;
+}
+
+.sellcar_addimg__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  font-size: 28px;
+  font-family: var(--var-Roboto);
+  font-weight: 400;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.sellcar_addimg__container {
+  background-color: #f3fafd;
+}
+
+.sellcar_addimg__noimg__text {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-family: var(--var-Roboto);
+  font-weight: 400;
+}
+
+.sellcar_addimg__img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.sellcar_addimg__li {
+  margin-bottom: 10px;
+  width: 600px;
+  height: 450px;
+  position: relative;
+}
+
+.sellcar_addimg__title__circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+  /* Колір фону кола */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  /* Колір тексту у колі */
+  font-size: 16px;
+  /* Розмір тексту */
+  font-family: var(--var-Roboto);
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+.sellcar_add_characteristics__container {
+  margin-top: 20px;
+}
+
+.addstylfor_btn {
+  padding-bottom: 50px;
+}
+
+.sellcar_add_characteristics__div {
+  width: 250px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.sellcar_add_characteristics__lable {
+  font-size: 16px;
+  /* Розмір тексту */
+  font-family: var(--var-Roboto);
+  font-weight: 500;
+}
+
+.sellcar_add_description__lable {
+  font-size: 14px;
+  /* Розмір тексту */
+  font-family: var(--var-Roboto);
+  font-weight: 400;
+}
+
+.sellcar_add_characteristics__input {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #FFA500;
+  background: #f3fafd;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+  font-size: 16px;
+  /* Розмір тексту */
+  font-family: var(--var-Roboto);
+  font-weight: 500;
+}
+
+.sellcar_add_description__container {
+  margin-top: 15px;
+}
+
+.sellcar_add_description {
+  width: 100%;
+  /* Ширина 100% від батьківського контейнера */
+  padding: 10px;
+  border: 2px solid #FFA500;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  -webkit-transition: border-color 0.3s;
+  transition: border-color 0.3s;
+  resize: none;
+  margin-top: 10px;
+}
+
+.add_car__btn {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #3498db;
+  /* Колір рамки */
+  border-radius: 15px;
+  /* Радіус кутів */
+  color: #fff;
+  /* Колір тексту */
+  background-color: #FFA500;
+  /* Колір тла */
+  -webkit-transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.add_car__btn:hover {
+  background-color: #2980b9;
+  /* Змінюється колір тла при наведенні */
+  border-color: #FFA500;
+  /* Змінюється колір рамки при наведенні */
+  color: #fff;
+  /* Змінюється колір тексту при наведенні */
+}
+
+.dopfor_btn {
+  text-align: center;
+}
+
+.delimg_icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: gray;
+  /* Колір фону кола */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  /* Колір тексту у колі */
+  font-size: 24px;
+  /* Розмір тексту */
+  font-family: var(--var-Roboto);
+  font-weight: 500;
+  margin-right: 10px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  cursor: pointer;
+}
+
+.addimg_list {
+  padding-left: 20px;
+}
+/*# sourceMappingURL=page.module.css.map */

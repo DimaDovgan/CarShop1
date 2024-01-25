@@ -1,0 +1,60 @@
+.header {
+  background-color: white;
+  height: 100px;
+  max-width: 100%;
+  background-color: #f0f2fa;
+}
+
+.header_menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.menuIcon {
+  fill: white;
+  stroke: #575551;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.menuIcon:hover, .menuIcon:focus {
+  fill: #575551;
+  stroke: white;
+}
+
+.heartIconActive {
+  fill: red;
+  stroke: #575551;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.container {
+  width: 1440px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+/*# sourceMappingURL=styles.module.css.map */

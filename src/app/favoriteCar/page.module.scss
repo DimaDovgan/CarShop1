@@ -1,0 +1,119 @@
+.car_img{
+    // width: 100%;
+    width: 300px;
+    height: 200px;
+    margin-right: 20px;
+}
+.favorite_car_container{
+    padding-top: 50px;
+    min-height: calc(100vh - 200px);
+}
+.page_title{
+    padding-bottom: 20px;
+    font-family: var(--var-Roboto);
+    font-weight: 600;
+    font-size: 42px;
+    color:#575551
+}
+.page_text{
+    font-family: var(--var-Roboto);
+    font-weight: 400;
+    font-size: 28px;
+    color:#575551
+}
+.heartIcon{
+    fill: white;
+    stroke: #575551;
+   width: 40px;
+   height: 40px;
+//    margin-right: 10px;
+   &:hover,
+   &:focus {
+   fill: red;
+   stroke: white;
+   }
+}
+.heartIconActive{
+    fill: red;
+    stroke: white;
+   width: 40px;
+   height: 40px;
+   margin-right: 10px;
+}
+
+.car_elem{
+    display: flex;
+    flex-direction: row;
+
+}
+.heart_component{
+    
+}
+.carlist{
+    // height: 100%;
+}
+.car_name{
+    font-family: var(--var-Roboto);
+    font-weight: 400;
+    font-size: 20px;
+    color:#0066cc;
+
+}
+.car_content{
+    padding: 10px;
+}
+.car_price{
+    font-family: var(--var-Roboto);
+    font-weight: 400;
+    font-size: 28px;
+    color:#009900;
+}
+.car_list{
+    display: flex;
+    flex-direction: row;
+}
+.car_list_1{
+    margin-right: 20px;
+}
+.car_list_text{
+    font-family: var(--var-Roboto);
+    font-weight: 400;
+    font-size: 16px;
+    color:#575551;
+    padding: 5px;
+
+}
+.car_list_svg{
+    width: 20px;
+    height: 20px;
+    fill: #575551;
+    
+}
+.car_list_elem{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.car_date_svg{
+    width: 20px;
+    height: 20px;
+    fill: #908e8b;
+    
+}
+.car_date_elem{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+.line{
+    width: 100%;
+        height: 2px; /* Товщина лінії */
+        background-color: #575551; /* Колір лінії */
+        margin-top: 10px;
+        margin-bottom: 10px;
+}
+.car_li{
+    margin-bottom: 20px;
+}

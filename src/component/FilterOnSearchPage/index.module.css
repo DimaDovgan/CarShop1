@@ -1,0 +1,71 @@
+.sellcar_add_characteristics__div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.sellcar_add_characteristics__input {
+  border: solid 2px #f0f2fa;
+}
+
+.label {
+  font-family: var(--var-Roboto);
+  font-weight: 400;
+  font-size: 16px;
+  color: #575551;
+  margin-bottom: 10px;
+}
+
+.filterContainer {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.gggg {
+  position: relative;
+}
+
+.year_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10px;
+}
+
+.sellcar_add_characteristics__input_v {
+  width: 80px;
+  border: solid 2px #f0f2fa;
+}
+
+.add_car__btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 20px;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #f0f2fa;
+  background-color: white;
+  color: #575551;
+  margin-top: 20px;
+}
+
+.add_car__btn:hover {
+  background-color: #575551;
+  color: #fff;
+}
+/*# sourceMappingURL=index.module.css.map */

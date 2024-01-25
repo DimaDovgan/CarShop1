@@ -1,0 +1,71 @@
+.commun_form {
+  width: 250px;
+  height: 300px;
+  border: 2px solid #FFA500;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.commun_contsiner {
+  width: 100%;
+  height: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.commun_avat_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.chack {
+  width: 20px;
+  height: 20px;
+}
+
+.avatar_img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+.chaked_polia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.btn {
+  width: 100%;
+  height: 30px;
+  border: 2px solid #FFA500;
+  border-radius: 5px;
+  font-family: var(--var-Roboto);
+  font-weight: 400;
+  font-size: 16px;
+  color: #575551;
+}
+
+.text {
+  font-family: var(--var-Roboto);
+  font-weight: 400;
+  font-size: 16px;
+  color: #575551;
+}
+/*# sourceMappingURL=index.module.css.map */

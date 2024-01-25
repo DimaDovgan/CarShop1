@@ -1,0 +1,69 @@
+.pagin_page {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 35px;
+  height: 35px;
+  border-radius: 5px;
+  border: 2px solid #FFA500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #575551;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.page_num_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.paginator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.arrow {
+  font-size: 36px;
+  text-decoration: none;
+  padding: 5px 10px;
+  color: #FFA500;
+  border-radius: 5px;
+  margin: 5px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.active {
+  background-color: #FFA500;
+}
+
+.pointin_pagination {
+  margin-top: 25px;
+  margin-left: 10px;
+}
+
+.pag_div {
+  margin-bottom: 100px;
+}
+/*# sourceMappingURL=index.module.css.map */
