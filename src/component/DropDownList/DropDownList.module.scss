@@ -12,3 +12,31 @@
     overflow-y: auto; 
     max-height: 100px;
 }
+
+.brend_list_item{
+    cursor: pointer;
+    font-size: 16px;
+  outline: none; 
+  transition: border-color 0.3s;
+  font-size: 16px; /* Розмір тексту */
+    font-family: var(--var-Roboto);
+    font-weight: 500;
+    &:hover{
+        background:#FFA500;
+    }
+    &:focus{
+        background:#FFA500;
+    }
+  }
+  .brend_list_container {
+    border: 2px solid #FFA500;
+    border-radius: 10px;
+    width: 250px;
+    position: absolute;
+    z-index: 999;
+    height: 150px; /* Фіксована висота */
+    overflow-y: auto; /* Скролінг по вертикалі, коли вміст більше ніж висота */
+    border: 1px solid #ccc;
+    background:#f3fafd; /* Окантовка для візуалізації прямокутника */
+    padding: 5px;
+  }

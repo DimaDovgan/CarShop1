@@ -5,10 +5,10 @@ import { Header } from '@/component/header/header';
 import {Roboto,Osw,Edu} from '../Font/font';
 import styles from "./styles.module.scss";
 import ScrollToTopButton from '@/component/scrollBtn/scrollBtn';
-// import { Provider } from 'react-redux';
-// import { store } from '../app/GlobalRedux/api/store';
 import { Providers } from "./GlobalRedux/provider";
 import { ToastContainer } from 'react-toastify';
+import { AuthReboot } from './authReboot';
+
 
 
 
@@ -22,12 +22,16 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  
   return (
     <html lang="en">
       
       <body className={`${Edu.variable} ${Roboto.variable} ${Osw.variable}`}>
+        
         <Providers >
         <ToastContainer />
+        <AuthReboot/>
+
         <div className={`${styles.tsst} ${styles.backGrount}`}>
         <Header/>
         <div className={styles.container}>

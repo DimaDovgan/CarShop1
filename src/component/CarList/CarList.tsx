@@ -25,7 +25,6 @@ type carTupe={
   brend:string,
   model:string,
   year:string,
-  generation:string,
   engineV:string,
   power:string,
   fuel:string,
@@ -38,6 +37,7 @@ type carTupe={
   datepublication:string,
   imagesList:string[],
   price:string,
+  range:number,
 
 }
 type UserState = {
@@ -127,11 +127,11 @@ export const CarList: React.FC<FilterInterProps> = ({ filter = '' })=>{
   <p className={styles.car_price}>{car.price} $</p>
   <div className={styles.car_list}>
   <ul className={styles.car_list_1}>
-    <li className={styles.car_list_elem} ><Renge className={styles.car_list_svg}/><p className={styles.car_list_text}>range</p></li>
+    <li className={styles.car_list_elem} ><Renge className={styles.car_list_svg}/><p className={styles.car_list_text}>{car.range} тис.</p></li>
     <li className={styles.car_list_elem}><Fuel className={styles.car_list_svg}/><p className={styles.car_list_text}>{car.fuel}</p></li>
   </ul>
   <ul>
-    <li className={styles.car_list_elem}><Location className={styles.car_list_svg}/><p className={styles.car_list_text}>{car.city}</p></li>
+    <li className={styles.car_list_elem}><Location className={styles.car_list_svg}/><p className={styles.car_list_text}>{car.city} </p></li>
     <li className={styles.car_list_elem}> <GearBox className={styles.car_list_svg}/><p className={styles.car_list_text}>{car.transmission}</p></li>
   </ul>
   </div>

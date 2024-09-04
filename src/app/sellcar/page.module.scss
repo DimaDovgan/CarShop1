@@ -170,3 +170,27 @@ padding-left: 50px;
   .addimg_list{
      padding-left: 20px;
   }
+  .sellcar_add_characteristics__div {
+    /* Інші стилі, які у вас були раніше */
+  }
+  
+  .brend_list_container {
+    height: 150px; /* Фіксована висота */
+    overflow-y: auto; /* Скролінг по вертикалі, коли вміст більше ніж висота */
+    border: 1px solid #ccc; /* Окантовка для візуалізації прямокутника */
+    padding: 5px; /* Внутрішній відступ */
+  }
+  .cansleBrendBtn{
+    background: transparent; /* Прозорий фон */
+  border: none; /* Без рамки */
+  cursor: pointer; /* Курсор руки при наведенні */
+  font-size: 24px; /* Розмір іконки */
+  color: #333; /* Колір за замовчуванням */
+    position:absolute;
+    padding-top: 12px;
+    right: 15px;
+    &:hover {
+        color: red;
+    }
+    
+  }

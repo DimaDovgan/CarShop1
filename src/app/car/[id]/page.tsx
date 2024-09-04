@@ -31,14 +31,16 @@ const Car =({params:{id}}:Props)=>{
    
     return <div className={styles.car_container}>
     {isLoading && <p>Завантаження ...</p>}
-    {data && <div className={styles.car_page_containt}>
-        <Cummmunication owner={data.owner} city={data.city}/>
+    {data  && <div className={styles.car_page_containt}>
+        {
+            ( isSuccess && data.owner && (data.owner=== "undefined" ? false : true)) &&<Cummmunication owner={data.owner} carId={id} city={data.city}/>
+        }
         <div className={styles.car_component}>
         <Slider imagesList={data.imagesList}/>
     <div className={styles.gfgf}>
     <p className={styles.text}>{data.brend}  {data.model} {data.year}</p>
     <p className={styles.text_price}>{data.price}$</p>
-    <p className={styles.text}>range тис.км пробіг</p>
+    <p className={styles.text}>{data.range} тис.км пробіг</p>
     <p className={styles.text}>{data.city} </p>
     <p>{data.region}</p>
     </div>

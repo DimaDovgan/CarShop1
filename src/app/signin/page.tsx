@@ -5,6 +5,7 @@ import stayes from "./page.module.scss"
 import styles from './page.module.scss';
 import { notifySuccess } from '@/helpers/toast';
 import { notifyWarn } from '@/helpers/toast';
+import { LoginHero } from '@/svgs';
 // import { useDispatch } from 'react-redux';
 
 import { useRegisterUserMutation } from '../GlobalRedux/api/authApi';
@@ -24,20 +25,15 @@ const SignIn:React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
-
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setEmail(e.target.value);
   };
-
   const handleNameChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setName(e.target.value);
   };
-  
-
   const handlePasswordChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setPassword(e.target.value);
   };
-
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     try {
@@ -50,7 +46,6 @@ const SignIn:React.FC = () => {
       else{
         notifySuccess("Ви зареєстровані");
       }
-
     } catch (err) {
       const validationErrors: { [key: string]: string } = {};
       err.inner.forEach((error: yup.ValidationError) => {
@@ -61,9 +56,9 @@ const SignIn:React.FC = () => {
       setErrors(validationErrors);
     }
   };
-
   return (
     <div className={stayes.sigin_container}>
+      <LoginHero className={styles.login_hero}/>
     <form onSubmit={handleSubmit} className={stayes.sigin_forma}>
         <div className={stayes.sigin_form__compon}>
         <label className={stayes.sigin_form__compon_label}>Ім'я:</label>

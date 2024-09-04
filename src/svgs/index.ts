@@ -11,5 +11,8 @@ export {default as  Twitter} from "./twitter.svg"
 export {default as  Instagram} from "./instagram.svg"
 export {default as  Facebook} from "./facebook.svg"
 export {default as ChackMark} from "./checkmark.svg"
+export {default as Profile_default} from "./profile_default.svg"
+export {default as LoginHero} from "./loginHero.svg"
+export {default as Edit} from './Edit.svg'
 
 

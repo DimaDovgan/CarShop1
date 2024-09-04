@@ -14,6 +14,13 @@
       -ms-flex-direction: row;
           flex-direction: row;
 }
+.menuProfileIcon{
+  fill: white;
+  stroke: #575551;
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
 
 .menuIcon {
   fill: white;

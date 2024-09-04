@@ -55,6 +55,26 @@ export const carApi = createApi({
         method: 'GET',
       }),
     }),
+    getOwnerCar: builder.mutation({
+      query: () => ({
+        url: `/getOwnerCar`,
+        method: 'GET',
+      }),
+    }),
+    fixSellCar: builder.mutation<IGenericResponse, { id: string; data: SellcarImput }>({
+      query: ({ id, data }) => ({
+        url: `fixCar/${id}`,
+        method: 'PUT',
+        body: data,
+      }),
+    }),
+    deleteCar: builder.mutation({
+      query: (carId) => ({
+        url: `/deleteCar/${carId}`,
+        method: 'DELETE',
+      }),
+    }),
+    
     // fetchCurrentUser: builder.query({
     //   async queryFn(_arg, { getState }, _extraOptions, baseQuery) {
     //     const persistedState = getState().auth.token;
@@ -79,4 +99,7 @@ export const{
  useCreateSellCarMutation,
  useGetAllCarMutation,
  useGetCarByIdMutation,
+ useGetOwnerCarMutation,
+ useFixSellCarMutation,
+ useDeleteCarMutation,
 }=carApi

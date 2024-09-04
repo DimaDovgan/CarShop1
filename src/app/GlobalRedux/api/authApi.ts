@@ -48,6 +48,14 @@ export const authApi = createApi({
           // credentials: 'include',
         };
       },}),
+      reLoginUser: builder.mutation<{ access_token: string; status: string },LogInInput>({
+        query(data) {
+          return {
+            url: 'reLogin',
+            method: 'POST',
+            body: data,
+          };
+        },}),
     logout: builder.mutation({
       query: () => ({
         url: 'logout',
@@ -111,63 +119,6 @@ export const authApi = createApi({
 });
 
 
-
-// export const authApi = createApi({
-//   reducerPath: 'authApi',
-//   baseQuery: fetchBaseQuery({
-//     baseUrl: `http://localhost:3000/api/`,
-//   }),
-//   endpoints: (builder) => ({
-//     registerUser: builder.mutation<IGenericResponse, SignInInput>({
-//       query(data) {
-//         return {
-//           url: 'signin',
-//           method: 'POST',
-//           body: data,
-//         };
-//       },
-//     }),
-//     loginUser: builder.mutation<
-//       { access_token: string; status: string },
-//       LogInInput
-//     >({
-//       query(data) {
-//         return {
-//           url: 'login',
-//           method: 'POST',
-//           body: data,
-//           credentials: 'include',
-//         };
-//       },
-//       // async onQueryStarted(args, { dispatch, queryFulfilled }) {
-//       //   try {
-//       //     await queryFulfilled;
-//       //     await dispatch(userApi.endpoints.getMe.initiate(null));
-//       //   } catch (error) {}
-//       // },
-//     }),
-//     verifyEmail: builder.mutation<
-//       IGenericResponse,
-//       { verificationCode: string }
-//     >({
-//       query({ verificationCode }) {
-//         return {
-//           url: `verifyemail/${verificationCode}`,
-//           method: 'GET',
-//         };
-//       },
-//     }),
-//     logoutUser: builder.mutation<void, void>({
-//       query() {
-//         return {
-//           url: 'logout',
-//           credentials: 'include',
-//         };
-//       },
-//     }),
-//   }),
-// });
-
 export const {
   useLoginUserMutation,
   useRegisterUserMutation,
@@ -175,5 +126,6 @@ export const {
   useLogoutMutation,
   useGetUserMutation,
   useAddFavoriteCarMutation,
+  useReLoginUserMutation,
   
 } = authApi;

@@ -19,6 +19,7 @@
     "gravatar": "^1.8.2",
     "joi": "^17.11.0",
     "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.2",
     "next": "13.5.6",

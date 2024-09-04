@@ -5,13 +5,44 @@
    border-radius: 20px;
    margin-left: 20px;
 }
+.sellcar_add_characteristics__label{
+margin-left: 10px;
+color: #333;; /* Приклад стилю, змініть за потреби */
+  font-size: 18px;
+  font-weight: bold; 
+  font-family: var(--var-Roboto);
+}
 .year_container{
+  position: absolute;
+  top: 100%; /* Відстань від верхньої межі контейнера */
+  left: 0;
+  width: 100%;
+  background: white; /* Задайте фон для контрасту, змініть за потреби */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь для кращого вигляду, змініть за потреби */
+  z-index: 10; /* Зробіть впорядкування за шаром вище інших елементів */
+   padding:10px;
+
+
   display: flex;
+  justify-content: space-around;
+  margin-top: -2px;
+  // width: 250px;
+  //   // position: absolute;
+  //   z-index: 999;
+  //   margin-top: -2px;
+  //   // background:#f3fafd;
+
 
 }
+
+// .year_container li:last-child {
+//   margin-bottom: 0; /* Відсутність відстані у останнього елементу */
+// }
 .rigthCom{
   margin-left: 20px;
 }
+
+
 .forma{
   display: flex;
   align-items: center;
@@ -23,9 +54,10 @@
 
   }
   .sellcar_add_characteristics__input{
-    margin-top:10px;
+    // margin-bottom: 10px;
+    width: 30%;
     width: 100%;
-  padding: 10px;
+  padding: 5px 10px 5px 10px;
   border: 2px solid #FFA500;
   background: #f3fafd;
   border-radius: 10px;
@@ -35,11 +67,42 @@
   font-size: 16px; /* Розмір тексту */
     font-family: var(--var-Roboto);
     font-weight: 500;
+    
+    
 }
+.sellcar_add_characteristics__input_title{
+  margin-top:10px;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #FFA500;
+  background: #f3fafd;
+  border-radius: 10px;
+  // border-radius: 10px 10px 0 0; 
+  font-size: 16px;
+  outline: none; 
+  transition: border-color 0.3s;
+  font-size: 16px; /* Розмір тексту */
+    font-family: var(--var-Roboto);
+    font-weight: 500;
+}
+
+.sellcar_add_characteristics__div__tehnic{
+  width: 250px;
+  // padding-bottom: 30px;
+  border-radius: 10px;
+  margin-top:10px;
+     margin-bottom: 15px;
+     position: absolute;
+     box-sizing: border-box;
+    background-color: #f3fafd;
+}
+
 .sellcar_add_characteristics__div{
   width: 250px;
     margin-bottom: 15px;
     position: relative;
+  // margin-top: 50px;
+    
     // display: flex;
     // flex-direction: column;
     // justify-content: center;
@@ -94,4 +157,18 @@
     display: flex;
   }
  
+  .cansleBrendBtn{
+    background: transparent; /* Прозорий фон */
+  border: none; /* Без рамки */
+  cursor: pointer; /* Курсор руки при наведенні */
+  font-size: 24px; /* Розмір іконки */
+  color: #333; /* Колір за замовчуванням */
+    position:absolute;
+    padding-top: 12px;
+    right: 15px;
+    &:hover {
+        color: red;
+    }
+    
+  }
  

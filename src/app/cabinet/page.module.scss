@@ -1,0 +1,10 @@
+.cabinet_container{
+    max-width: 1024px;
+    width: 100%;
+    min-height:  calc(100vh - 200px);
+    background: white;
+     display: flex;
+    flex-direction: row;
+    align-items: center;
+     justify-content: space-between;
+}

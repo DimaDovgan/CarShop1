@@ -1,11 +1,18 @@
+
 .sigin_container{
+    max-width: 1024px;
     width: 100%;
     height: calc(100vh - 200px);
     background: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+     justify-content: space-between;
 }
 
 .sigin_forma{
     max-width: 300px;
+    width: 100%;
     background:#cce6ff;
     border-radius: 20px;
     padding: 15px;
@@ -75,4 +82,23 @@
     // display: flex;
     // justify-content: center;
     // margin-top: 20px;
+}
+
+.login_hero{
+    display: none;
+  }
+@media screen and (min-width: 768px) {
+    
+    .login_hero{
+        display: block;
+      }
+    
+}
+@media screen and (min-width: 1024px) {
+    
+    .login_hero{
+        width: 640px;
+        height: auto;
+      }
+    
 }
